@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal portfolio of Anushka Patil - Computer Engineering Student at Viva College & Aspiring AI Developer.">
+    <title>Anushka Patil | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo" id="nav-logo">AP<span>.</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme">
+                    <!-- Sun Icon (shown in dark mode) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon (shown in light mode) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content container">
+            <div class="hero-text-wrapper">
+                <span class="hero-greeting animate-fade">Hi, my name is</span>
+                <h1 class="hero-title animate-fade">Anushka Patil</h1>
+                <h2 class="hero-subtitle animate-fade">Computer Engineering Student <span>|</span> Aspiring AI Developer
+                </h2>
+                <p class="hero-tagline animate-fade">Building minimal, high-performance web applications and engineering
+                    elegant solutions to complex coding problems.</p>
+                <div class="hero-cta animate-fade">
+                    <a href="#projects" class="btn btn-primary" id="hero-btn-projects">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade">
+                <div class="hero-shape-container">
+                    <div class="hero-abstract-shape"></div>
+                    <div class="hero-abstract-shape-outline"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section scroll-reveal" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <p class="lead">
+                        I am a Computer Engineering student at <strong>Viva College</strong> with a passion for building
+                        functional, user-centric solutions.
+                    </p>
+                    <p>
+                        I am currently honing my skills in Python, C++, and JavaScript. I enjoy transforming logical
+                        puzzles into clean, executable code that enhances the end-user's experience. My engineering
+                        background equips me with a strong analytical mindset, helping me approach software development
+                        with structure and scalability in mind.
+                    </p>
+                    <p class="hobbies-note">
+                        When I’m not coding, I enjoy <strong>singing</strong>, which helps me stay creative and balanced
+                        in my developer journey.
+                    </p>
+                </div>
+                <div class="about-stats-card">
+                    <div class="stats-item">
+                        <span class="stats-num">Viva</span>
+                        <span class="stats-label">College Student</span>
+                    </div>
+                    <div class="stats-item">
+                        <span class="stats-num">AI</span>
+                        <span class="stats-label">Aspiring Developer</span>
+                    </div>
+                    <div class="stats-item flex-creative">
+                        <svg class="singing-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18V5l12-2v13"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <circle cx="18" cy="16" r="3"></circle>
+                        </svg>
+                        <span class="stats-creative-label">Creative & Balanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section scroll-reveal" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">A collection of responsive web applications, e-commerce storefronts, and
+                AI-driven platforms.</p>
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project_valerius.png" alt="Valerius Fashion Store mockup preview"
+                            class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/anushkapatil7722-ux/Valerius" target="_blank"
+                                rel="noopener noreferrer" class="project-link-icon" aria-label="Github link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">E-Commerce</span>
+                        <h3 class="project-card-title">Valerius Fashion Store</h3>
+                        <p class="project-description">A luxurious tailoring and modern clothing storefront featuring
+                            high-fashion collections. Styled with high-contrast layouts, smooth grid systems, and
+                            responsive designs.</p>
+                        <div class="project-tech-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Vite</span>
+                        </div>
+                        <a href="https://github.com/anushkapatil7722-ux/Valerius" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-card-git" id="git-btn-valerius">
+                            <span>View on GitHub</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project_freshcart.png" alt="FreshCartMarket mockup preview"
+                            class="project-image" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/anushkapatil7722-ux/FreshCart-Market" target="_blank"
+                                rel="noopener noreferrer" class="project-link-icon" aria-label="Github link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">E-Commerce</span>
+                        <h3 class="project-card-title">FreshCartMarket</h3>
+                        <p class="project-description">A vibrant, responsive organic grocery store marketplace featuring
+                            a full-width dynamic banner slider, category-based shopping cards, and smooth interaction
+                            states.</p>
+                        <div class="project-tech-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                        <a href="https://github.com/anushkapatil7722-ux/FreshCart-Market" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-card-git" id="git-btn-freshcart">
+                            <span>View on GitHub</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="assets/project_kisaanai.png" alt="KisaanAI mockup preview" class="project-image"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/anushkapatil7722-ux/Kisaane-AI-website" target="_blank"
+                                rel="noopener noreferrer" class="project-link-icon" aria-label="Github link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">AI Web App</span>
+                        <h3 class="project-card-title">KisaanAI</h3>
+                        <p class="project-description">An AI-powered mobile and web landing application built for Indian
+                            farmers. Integrates real-time crop health scanners, disease detection, and crop management
+                            tools.</p>
+                        <div class="project-tech-list">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>AI Integration</span>
+                        </div>
+                        <a href="https://github.com/anushkapatil7722-ux/Kisaane-AI-website" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-card-git" id="git-btn-kisaanai">
+                            <span>View on GitHub</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section scroll-reveal" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Tools, languages, and technologies I work with daily.</p>
+            <div class="skills-container">
+                <!-- Skill Item: Python -->
+                <div class="skill-item-card">
+                    <div class="skill-icon-wrapper">
+                        <span class="skill-lang-tag">PY</span>
+                    </div>
+                    <span class="skill-name">Python</span>
+                </div>
+                <!-- Skill Item: C++ -->
+                <div class="skill-item-card">
+                    <div class="skill-icon-wrapper">
+                        <span class="skill-lang-tag">C++</span>
+                    </div>
+                    <span class="skill-name">C++</span>
+                </div>
+                <!-- Skill Item: JavaScript -->
+                <div class="skill-item-card">
+                    <div class="skill-icon-wrapper">
+                        <span class="skill-lang-tag">JS</span>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                </div>
+                <!-- Skill Item: HTML/CSS -->
+                <div class="skill-item-card">
+                    <div class="skill-icon-wrapper">
+                        <span class="skill-lang-tag">&lt;&gt;</span>
+                    </div>
+                    <span class="skill-name">HTML / CSS</span>
+                </div>
+                <!-- Skill Item: Git/GitHub -->
+                <div class="skill-item-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="git-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="18" r="3"></circle>
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M18 15V9a4 4 0 0 0-4-4H9"></path>
+                            <line x1="6" y1="9" x2="6" y2="15"></line>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Git / GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section class="contact-section scroll-reveal" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <span class="contact-tagline">What's Next?</span>
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-description">
+                    I am currently looking for internship and junior developer opportunities. If you have any projects
+                    in mind, want to collaborate, or just want to chat, my inbox is always open!
+                </p>
+                <div class="contact-actions">
+                    <!-- Email action containing copy button and mailto -->
+                    <div class="email-btn-container">
+                        <a href="mailto:anushkapatil7722@gmail.com" class="btn btn-email" id="contact-email-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>anushkapatil7722@gmail.com</span>
+                        </a>
+                        <button id="copy-email-btn" class="btn btn-copy" aria-label="Copy email address"
+                            title="Copy to clipboard">
+                            <svg class="copy-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <svg class="check-svg hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-left">
+                <a href="#" class="logo footer-logo">AP<span>.</span></a>
+                <p>Computer Engineering Student at Viva College</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link-btn"
+                        aria-label="Github profile" id="footer-github-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <p class="copyright">&copy; 2026 Anushka Patil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
